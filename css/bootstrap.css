@@ -6207,7 +6207,7 @@ a.close.disabled {
 }
 
 .carousel {
-  position: relative;
+  position: relative;margin:auto;
 }
 
 .carousel.pointer-event {
@@ -6216,8 +6216,10 @@ a.close.disabled {
 }
 
 .carousel-inner {
+  
+  margin: auto;
   position: relative;
-  width: 100%;
+  width: 60%;
   overflow: hidden;
 }
 
@@ -6290,6 +6292,9 @@ a.close.disabled {
   .carousel-fade .active.carousel-item-right {
     transition: none;
   }
+}
+.carouselAlign{
+  align:center;
 }
 
 .carousel-control-prev,
