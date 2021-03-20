@@ -2168,10 +2168,10 @@ padding-left:40px;
   }
 .ridebox {
 	cursor: pointer;
-	height: 250px;
+	/*height: 250px;*/
 	position: relative;
 	/*overflow: hidden;*/
-	width: 300px;
+	/*width: 300px;*/
 	text-align:center;
 	margin-top: 100px;
 	}
@@ -2188,8 +2188,8 @@ padding-left:40px;
 	-ms-transition: all 300ms ease-out;
 	transition: all 300ms ease-out;
 	opacity: 0;
-	width: 300px;
-	height: 250px;
+	width: 100%;
+	height: 100%;
 	padding:15px 0 0 15px;
 	border-radius:10px;
 	text-align: left;
@@ -2489,7 +2489,7 @@ div.desc {
     background: rgba(0, 0, 0, 0.6) !important;
 }
 .ridebox-2{
-    margin-left:60px;
+    margin:auto;
     margin-bottom: 40px !important;
 }
 @media only screen and (max-width: 992px) {
