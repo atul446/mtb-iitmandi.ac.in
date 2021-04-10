@@ -2486,7 +2486,7 @@ div.desc {
   text-align: center;
 }
 .card-overlay {
-    background: rgba(0, 0, 0, 0.6) !important;
+    background: rgba(0, 0, 0, 0) !important;
 }
 .ridebox-2{
     margin:auto;
@@ -2530,4 +2530,43 @@ a.button1:hover{
 		display:block;
 	    margin:0.4em auto;
 	 }
-} 
+}
+
+.rent-img{
+	margin:10px 10px;
+	width: 30vw;
+	height: 30vw;
+}
+
+@media only screen and (max-width: 1000px) {
+	.rent-img{
+		margin:10px 15vw;
+		width: 40vw;
+		height: 40vw;
+	}
+}
+
+@media only screen and (max-width: 770px) {
+	.rent-img{
+		margin:10px 5vw;
+		width: 60vw;
+		height: 60vw;
+	}
+}
+  
+@media only screen and (max-width: 500px) {
+	.rent-img{
+		margin:10px 5vw;
+		width: 80vw;
+		height: 80vw;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.rent-img{
+		margin:10px -2vw;
+		width: 92vw;
+		height: 92vw;
+	}
+}
+  
