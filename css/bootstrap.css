@@ -6308,7 +6308,7 @@ a.close.disabled {
   }
 }
 .carouselAlign{
-  align:center;
+  box-align:center;
 }
 
 .carousel-control-prev,
