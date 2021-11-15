@@ -1,0 +1,19 @@
+To change the image :
+
+index.html
+pastrides.html
+
+find div "fadedbox"
+inside it change the src of img of class "hoveredmap"
+
+
+To change the text on the maps :
+
+css>styles.css
+
+find 
+
+.ridebox .fadedbox .title-text{
+
+}
+

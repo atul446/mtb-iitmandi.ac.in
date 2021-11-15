@@ -2174,6 +2174,8 @@ padding-left:40px;
 	/*width: 300px;*/
 	text-align:center;
 	margin-top: 100px;
+	margin-right: 2.5em;
+
 	}
 	
 	.ridebox .fadedbox {
@@ -2190,12 +2192,44 @@ padding-left:40px;
 	opacity: 0;
 	width: 100%;
 	height: 100%;
-	padding:15px 0 0 15px;
+	/* padding:15px 0 0 15px; */
 	border-radius:10px;
 	text-align: left;
 	/*padding: 130px 20px;*/
 	}
-	.ridebox:hover .fadedbox { opacity: 0.8; }
+
+	/*--------------------------------------------------------------------------------------------------------------------  */
+	.ridebox .fadedbox .hoveredmap{
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 3;
+		object-fit: cover;
+		border-radius: inherit;
+	}
+	.ridebox .fadedbox .title-text{
+		left: -3em;
+		opacity: 0;
+		position:absolute;
+		color: #000;
+		font-weight: bold;
+		z-index: 4;
+		padding: 1em;
+	}
+	.ridebox:hover .fadedbox { 
+		opacity: 1;
+		transition: 0.5s ease-in;
+	 }
+	.ridebox:hover .fadedbox .title-text{
+		transform: translate(3em,0);
+		transition: 0.5s;
+		opacity: 1;		
+	}
+	.ridebox:hover .fadedbox .hoveredmap{
+		opacity: 1;	
+	}
+	
+	/*--------------------------------------------------------------------------------------------------------------------  */
 	.ridebox .text {
 	-webkit-transition: all 300ms ease-out;
 	-moz-transition: all 300ms ease-out;
@@ -2205,6 +2239,14 @@ padding-left:40px;
 	transform: translateY(30px);
 	-webkit-transform: translateY(30px);
 	}
+
+
+
+
+
+
+
+
 	.ridebox .title {
 	font-size: 1.2em;
 	opacity: 0;
