@@ -2168,13 +2168,14 @@ padding-left:40px;
   }
 .ridebox {
 	cursor: pointer;
-	/*height: 250px;*/
+	/* height: 15rem; */
 	position: relative;
-	/*overflow: hidden;*/
+	/* overflow: hidden; */
 	/*width: 300px;*/
 	text-align:center;
 	margin-top: 100px;
 	margin-right: 2.5em;
+
 
 	}
 	
