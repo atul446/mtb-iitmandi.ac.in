@@ -786,6 +786,8 @@ input[type='checkbox'] {
 /****************************/
 /*     05. Team     */
 /****************************/
+
+
 .slider-1 {
 	padding-top: 6.875rem;
 	padding-bottom: 6.375rem;
@@ -828,6 +830,7 @@ input[type='checkbox'] {
 	position: relative;
 	border: none;
 	background-color: transparent;
+	
 }
 
 .slider-1 .card-image {
@@ -836,7 +839,8 @@ input[type='checkbox'] {
 	margin-right: auto;
 	margin-bottom: 0.25rem;
 	margin-left: auto;
-	border-radius: 25%;
+	border-radius: 10%;
+	object-fit: cover;
 }
 
 .slider-1 .card-body {
