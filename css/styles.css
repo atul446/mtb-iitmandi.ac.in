@@ -830,7 +830,6 @@ input[type='checkbox'] {
 	position: relative;
 	border: none;
 	background-color: transparent;
-	min-width: auto;
 	
 }
 
