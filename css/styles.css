@@ -2537,7 +2537,7 @@ div.desc {
     background: rgba(0, 0, 0, 0) !important;
 }
 .ridebox-2{
-    margin:auto;
+    margin: 20px auto;
     margin-bottom: 40px !important;
 }
 @media only screen and (max-width: 992px) {

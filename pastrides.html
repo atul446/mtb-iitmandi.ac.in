@@ -1,662 +1,1198 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- SEO Meta Tags -->
-        <meta name="description" content="MtB - Mountain Biking Club of IIT Mandi">
-        <meta name="author" content="MtB - Webdevs">
-        <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-        <meta property="og:site_name" content="" />
-        <!-- website name -->
-        <meta property="og:site" content="" />
-        <!-- website link -->
-        <meta property="og:title" content=""/>
-        <!-- title shown in the actual shared post -->
-        <meta property="og:description" content="" />
-        <!-- description shown in the actual shared post -->
-        <meta property="og:image" content="" />
-        <!-- image link, make sure it's jpg -->
-        <meta property="og:url" content="" />
-        <!-- where do you want your post to link to -->
-        <meta property="og:type" content="article" />
-        <!-- Website Title -->
-        <title>MtB | IIT Mandi</title>
-        <!-- Styles -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/fontawesome-all.css" rel="stylesheet">
-        <link href="css/swiper.css" rel="stylesheet">
-        <link href="css/magnific-popup.css" rel="stylesheet">
-        <link href="css/styles.css" rel="stylesheet">
-        <!-- Favicon  -->
-        <link rel="icon" href="images/MTBlogo.png">
-    </head>
-    <body data-spy="scroll" data-target=".fixed-top">
-        <!-- Preloader -->
- 
-        <!-- end of preloader -->
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top" style="background-color: white;" >
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html" ><img src="images/MTBlogo.png" style="width:70px;height:70px;" alt="MtB Logo"></a> 
-            <!-- Mobile Menu Toggle Button -->
-            <button style="color:black;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-awesome fas fa-bars"></span>
-            <span class="navbar-toggler-awesome fas fa-times"></span>
-            </button>
-            <!-- end of mobile menu toggle button -->
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault" style="font-size:16px;">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link page-scroll" href="index.html" style="color:black;">HOME <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link page-scroll" href="facilities.html" style="color:black;">FACILITIES<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="about.html" style="color:black;">ABOUT US</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#" style="color:black;">PAST RIDES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="team.html" style="color:black;">TEAM</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="blog.html" style="color:black;">BLOGS</a>
-                    </li>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="MtB - Mountain Biking Club of IIT Mandi"
+    />
+    <meta name="author" content="MtB - Webdevs" />
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+    <meta property="og:site_name" content="" />
+    <!-- website name -->
+    <meta property="og:site" content="" />
+    <!-- website link -->
+    <meta property="og:title" content="" />
+    <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" />
+    <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" />
+    <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" />
+    <!-- where do you want your post to link to -->
+    <meta property="og:type" content="article" />
+    <!-- Website Title -->
+    <title>MtB | IIT Mandi</title>
+    <!-- Styles -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/fontawesome-all.css" rel="stylesheet" />
+    <!-- <link href="css/swiper.css" rel="stylesheet"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link href="css/magnific-popup.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Favicon  -->
+    <link rel="icon" href="images/MTBlogo.png" />
+  </head>
+  <body data-spy="scroll" data-target=".fixed-top">
+    <!-- Preloader -->
 
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contact" style="color:black;">CONTACT</a>
-                    </li>
-                </ul>
+    <!-- end of preloader -->
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top"
+      style="background-color: white"
+    >
+      <!-- Image Logo -->
+      <a class="navbar-brand logo-image" href="index.html"
+        ><img
+          src="images/MTBlogo.png"
+          style="width: 70px; height: 70px"
+          alt="MtB Logo"
+      /></a>
+      <!-- Mobile Menu Toggle Button -->
+      <button
+        style="color: black"
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-awesome fas fa-bars"></span>
+        <span class="navbar-toggler-awesome fas fa-times"></span>
+      </button>
+      <!-- end of mobile menu toggle button -->
+      <div
+        class="collapse navbar-collapse"
+        id="navbarsExampleDefault"
+        style="font-size: 16px"
+      >
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a
+              class="nav-link page-scroll"
+              href="index.html"
+              style="color: black"
+              >HOME <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a
+              class="nav-link page-scroll"
+              href="facilities.html"
+              style="color: black"
+              >FACILITIES<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link page-scroll"
+              href="about.html"
+              style="color: black"
+              >ABOUT US</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#" style="color: black"
+              >PAST RIDES</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link page-scroll"
+              href="team.html"
+              style="color: black"
+              >TEAM</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link page-scroll"
+              href="blog.html"
+              style="color: black"
+              >BLOGS</a
+            >
+          </li>
 
-            </div>
-        </nav>
-        <!-- end of navbar -->
-        <!-- end of navbar -->
-        <!-- Header -->
-        <style media="screen">
-            .header {
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: 10% -30%; 
-                background-attachment: fixed;
-            }
-            .dash{
-                margin-top: 150px;
-                margin-bottom: 150px;
-                border: 1px solid white;
-                width: 100%;
-                height: 0px;
-            }
-            /* #ridebxtxt{
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#contact" style="color: black"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- end of navbar -->
+    <!-- Header -->
+    <style media="screen">
+      .header {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 10% -30%;
+        background-attachment: fixed;
+      }
+      .dash {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        border: 1px solid white;
+        width: 100%;
+        height: 0px;
+      }
+      /* #ridebxtxt{
                 text-align: justify;
             } */
-        </style>
-        <header id="header" class="header "  style="background-image: url('images/gallery/ride.jpg');background-attachment: fixed;clear:both !important;height:100%">
-        </header>
-        <!-- end of header -->
-        <!-- end of header -->
-        <div id="details">          
-            <div id="details" class="basic-2">
-                <h1 align="center">PAST RIDES</h1> 
-                <br> <br> <br> <br>                      
-                <div id="ridecont" class="container">
-                    
-                    <h2 align="center" style="margin-bottom: 100px;">LONG RIDES</h2>
-                    
-                    <div class="row ridebox-2">
-                        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                        <div class="col-lg-5">
-                            <div class="ridebox">
-                                <img class=" img-fluid" src="images/trails/bajaura.jpg" style="border-radius:10px; "><br>
-                                <div class="fadedbox">
-                                    <div class="title-text">
-                                        <ul>
-                                            <li>Difficulty : Hard</li>
-                                            <li>Distance : 115.4kms</li>
-                                            <li>Elevation : 2256m</li>
-                                        </ul>
-                                        
-                                    </div>
-                                    <img class= "hoveredmap" src="images/maps/A) Doohki-Pandoh-Bajaura-Kandhi.png" alt="">
-                                </div>
-                            </div>
-                    
-                        </div>
-                        <div class="col-lg-5" id="ridebxtxt">
-                            <p style="color:white;">
-                            <h3>Round Trip: IIT Mandi-Doohki-Pandoh-Bajaura-Kandhi-IIT Mandi</h3>
-                            A day-long ride with a stretch of 125 km with an approx. 2500 m elevation gain tests a rider's endurance level. Pro level is required to complete the round trip. The toughest part is the climb of 1200m from Bajaura to Kandhi, after 78 km of riding and having gained an elevation of 1300m. Stay hydrated and don't forget to have lunch somewhere in between. A few places for sightseeing are Pandoh Dam, Hanogi Devi Temple & Bridge, the river flowing alongside the road near Aut & Bajaura, the Bajaura valley enroute to Kandhi Pass, the Kamand Valley from Kandhi Pass etc.
-                            <br><br>Backpack: Multi-toolkit, puncture kit, front & back lights (to cross the tunnel near Aut), fruits, especially bananas, dry fruits, and approx. 6 ORS packets.
+    </style>
+    <header
+      id="header"
+      class="header"
+      style="
+        background-image: url('images/gallery/ride.jpg');
+        background-attachment: fixed;
+        clear: both !important;
+        height: 100%;
+      "
+    ></header>
+    <!-- end of header -->
+    <!-- end of header -->
+    <div id="details">
+      <div id="details" class="basic-2">
+        <h1 align="center">PAST RIDES</h1>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div id="ridecont" class="container">
+          <h2 align="center" style="margin-bottom: 10px">LONG RIDES</h2>
 
-                            
+          <style>
+            html,
+            body {
+              height: 100%;
+              position: relative;
+            }
 
+            body {
+              background: #eee;
+              font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+              font-size: 14px;
+              color: white;
+              margin: 0;
+              padding: 0;
+            }
 
-                            <br><br><a target="to_blank" href="https://www.strava.com/activities/3780486249#2719574739373440250">
-                            Trail Link
-                            </a></p>
-                        </div>
-                    </div>
-                    <div class="row reversecol ridebox-2">
-                        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                        <div class="col-lg-5" id="ridebxtxt">
-                            <p style="color:white;">
-                            <h3>Ride to Rohtang Pass</h3>
-                            This was a 4 day long ride conducted by the MTB. The total 6 members went on this ride individually.The total distance covered in this ride was 260 kms. The journey of the ride was started from the North Campus on 18th of June. On the first day of ride the total distance covered was 87 kms which was from North Campus to Manali. Then on the second day, the route from Manali to Marhi was covered, which is 30 kms. On the third day, the ride was from Marhi to Rohtang then Sissu and back to Manali, which covered a distance of 56 kms. On 21st of June, the riders ride from Manali to Campus and journey came to an end with 87 kms. This was a great ride conducted only for the experienced riders of the club.                             
-                            <br><br>
-                            <a target="to_blank" href="https://www.alltrails.com/explore/recording/day-1-to-manali-13f9896">
-                                Trail Link
-                            </a></p>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="ridebox" style="float: right;">
-                                <img class=" img-fluid" src="images/rohtang-ride.jpg" style="border-radius:10px; "><br>
-                                <div class="fadedbox">
-                                    <div class="title-text">
-                                        <ul>
-                                            <li>Difficulty : Hard</li>
-                                            <li>Distance : 300.2kms</li>
-                                            <li>Elevation : 9498m</li>
-                                        </ul>    
-                                        
-                                    </div>
-                                    <img class= "hoveredmap" src="images/maps/rohtang-ride-map.png" alt="">
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <!-- end of row -->
-                    <div class="dash"></div>
-                    <h2 align="center" style="margin-bottom: 100px;">MEDIUM RIDES</h2>
-                    
-                    <div class="row reversecol ridebox-2">
-                        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                        <div class="col-lg-5" id="ridebxtxt">
-                            <p style="color:white;">
-                            <h3>Miyoli Village</h3>
-                            The trail is a little off-road. The scenery is magnificent, with a majestic view of the river and hanging bridges, and the difficulty level is easy. This trail connects to Mandi city.
-                            
-                            <br><br><a target="to_blank" href=" https://strava.app.link/pmP2U6Cwx5">
-                            Trail Link
-                            </a></p>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="ridebox" style="float: right;">
-                                <img  class=" img-fluid" src="images/trails/miyoli.jpg" style="border-radius:10px; "><br>
-                                <div class="fadedbox">
-                                    <div class="title-text">
-                                        <ul>
-                                            <li>Difficulty : Hard</li>
-                                            <li>Distance : 48.3kms</li>
-                                            <li>Elevation : 3207m</li>
-                                        </ul>
-                                    </div>
-                                    <img class= "hoveredmap" src="images/maps/B) Miyoli village.png" alt="">
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <!-- end of row -->
-                    <div class="row ridebox-2">
-                        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                        <div class="col-lg-5">
-                            <div class="ridebox">
-                                <img class=" img-fluid" src="images/trails/diana-park.jpeg" style="border-radius:10px; "><br>
-                                <div class="fadedbox">
-                                    <div class="title-text">
-                                        <ul>
-                                            <li>Difficulty : Moderate</li>
-                                            <li>Distance : 30.1kms</li>
-                                            <li>Elevation : 1131m</li>
-                                        </ul>
-                                        
-                                    </div>
-                                    <img class= "hoveredmap" src="images/maps/C) Diana Park.png" alt="">
-                                </div>
-                            </div>
-                           
-                        </div>
-                        <div class="col-lg-5" id="ridebxtxt">
-                            <p style="color:white;">
-                            <h3>Diana Park</h3>
-                            Diana Park is situated at the intersection of two valleys. The Dhauladhar range is clearly visible from this point. Scenic beauty enroute Diana which will make you feel nostalgic. It is a moderate to tough-level ride, depending on the rider.
-                            
-                            <br><br><a target="to_blank" href="https://www.alltrails.com/explore/recording/baghi?u=m">
-                            Trail Link
-                            </a></p>
-                        </div>
-                    </div>
-                    <div class="row reversecol ridebox-2">
-                        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                        <div class="col-lg-5" id="ridebxtxt">
-                            <p style="color:white;">
-                            <h3>South Campus to Baghi Nallah</h3>
-                            One has to cross Baghi Nallah on the way to Prashar Lake. It is around 15 km from the campus and the ride is moderate from the south campus.
-                            
-                            <br><br><a target="to_blank" href="https://www.alltrails.com/explore/recording/baghi?u=m">
-                            Trail Link
-                            </a></p>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="ridebox" style="float: right;">
-                                <img class=" img-fluid" src="images/trails/baggi1.jpg" style="border-radius:10px; "><br>
-                                <div class="fadedbox">
-                                    <div class="title-text">
-                                        <ul>
-                                            <li>Difficulty : Moderate</li>
-                                            <li>Distance : 30.1kms</li>
-                                            <li>Elevation : 1131m</li>
-                                        </ul>    
-                                        
-                                    </div>
-                                    <img class= "hoveredmap" src="images/maps/D) South Campus to Baghi Nallah.png" alt="">
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="row ridebox-2">
-                        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                        <div class="col-lg-5">
-                            <div class="ridebox">
-                                <img class=" img-fluid" src="images/mtb/gharan.jpg" style="border-radius:10px; "><br>
-                                <div class="fadedbox">
-                                    <div class="title-text">
-                                        <ul>
-                                            <li>Difficulty : Hard</li>
-                                            <li>Distance : 50kms</li>
-                                            <li>Elevation : 1974m</li>
-                                        </ul>
-                                        
-                                    </div>
-                                    <img class= "hoveredmap" src="images/maps/E) Kamand-Doohki-Gharan-Mandi-Kathindi-Kamand.png" alt="">
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-5" id="ridebxtxt">
-                            <p style="color:white;">
-                            <h3>Loop: Kamand-Doohki-Gharan-Mandi-Kathindi-Kamand </h3>
-                            A 50 km loop from Kamand via Doohki-Gharan-Mandi. We climb up to Doohki, followed by a steep downhill to Gharan, where we follow the Kullu-Mandi Highway till Mandi and then the Kathindi Climb, which becomes difficult if the rider is exhausted.
-                            
-                            <br><br><a target="to_blank" href="https://www.alltrails.com/explore/recording/recording-aug-03-08-11-pm?u=m">
-                            Trail Link
-                            </a></p>
-                        </div>
-                    </div>
-                    <div class="row reversecol ridebox-2">
-                        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                        <div class="col-lg-5" id="ridebxtxt">
-                            <p style="color:white;">
-                            <h3>Parashar Lake</h3>
-                            Parashar takes effort from the rider's side. One can divide this ride into 4 segments with stops at Baghi, One Love Cafe, and Bogchi Cafe. One Love Cafe to Bogchi Cafe has a steep climb through the forest. Be careful to refill your water at each stop. No water source is available after one love cafe.
-                            
-                            <br><br><a target="to_blank" href="https://www.alltrails.com/explore/recording/recording-sep-28-02-47-pm--3?u=m">
-                            Trail Link
-                            </a></p>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="ridebox" style="float: right;">
-                                <img class=" img-fluid" src="images/Parashar1 - sonu chhillar.jpeg" style="border-radius:10px; "><br>
-                                <div class="fadedbox">
-                                    <div class="title-text">
-                                        <ul>
-                                            <li>Difficulty : Moderate</li>
-                                            <li>Distance : 35.23kms</li>
-                                            <li>Elevation : 2122m</li>
-                                        </ul>
-                                        
-                                    </div>
-                                    <img class= "hoveredmap" src="images/maps/F) Parasher Lake.png" alt="">
-                                </div>
-                            </div>
-                           
-                        </div>
-                    </div>
-                    <div class="row ridebox-2">
-                        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                        <div class="col-lg-5">
-                            <div class="ridebox">
-                                <img class=" img-fluid" src="images/trails/darang22.jpg" style="border-radius:10px; "><br>
-                                <div class="fadedbox">
-                                    <div class="title-text">
-                                        <ul>
-                                            <li>Difficulty : Hard</li>
-                                            <li>Distance : 57.36kms</li>
-                                            <li>Elevation : 2070m</li>
-                                        </ul>
-                                        
-                                    </div>
-                                    <img class= "hoveredmap" src="images/maps/G) Kamand-Kathindi-Drang-Mandi-Skore-Kamand.png" alt="">
-                                </div>
-                            </div>
-                            <br>
-                        </div>
-                        <div class="col-lg-5" id="ridebxtxt">
-                            <p style="color:white;">
-                            <h3>Loop: Kamand-Kathindi-Drang-Mandi-Skore-Kamand</h3>
-                            After a steep climb to Kathindi, take a right on the Drang road to meet a downhill road. From Drang to Mandi, we need to take the Mandi-Jogindernagar highway, so be cautious while on the highway. Take the exit to Skore from Mandi. It lies around 500m before the Bhuli bridge. The road is paved till Skore, but after that, the real offroad starts with no one around it. There is no help available afterwards. Keep an essential toolkit with you if you are planning to take this road.
-                            
-                            <br><br><a target="to_blank" href="https://www.alltrails.com/explore/recording/recording-feb-08-0602-pm?u=m">
-                            Trail Link
-                            </a></p>
-                        </div>
-                    </div>
-                    <div class="row reversecol ridebox-2">
-                        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                        <div class="col-lg-5" id="ridebxtxt">
-                            <p style="color:white;">
-                            <h3>Kandhi</h3>
-                            This ride was organized to the Kandhi village on 24 April 2022 and the distance covered was approximately 40kms.
-                            
-                            <br><br><a target="to_blank" href="https://www.strava.com/activities/7031670481">
-                            Trail Link
-                            </a></p>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="ridebox" style="float: right;"> 
-                                <img class=" img-fluid" src="images/kandhi-ride.jpg" style="border-radius:10px; "><br>
-                                <div class="fadedbox">
-                                    <div class="title-text">
-                                        <ul>
-                                            <li>Difficulty : Moderate</li>
-                                            <li>Distance : 31.15kms</li>
-                                            <li>Elevation : 856m</li>
-                                        </ul>
-                                    
-                                    </div>
-                                    <img class= "hoveredmap" src="images/maps/M) kandi-ridemap.png" alt="">
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="dash"></div>
-                    <h2 align="center" style="margin-bottom: 100px;">SHORT RIDES</h2>
-                    <div class="row ridebox-2">
-                        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                        <div class="col-lg-5">
-                            <div class="ridebox">
-                                <img class=" img-fluid" src="images/trails/kathindi.jpg" style="border-radius:10px; "><br>
-                                <div class="fadedbox">
-                                    <div class="title-text">
-                                        <ul>
-                                            <li>Difficulty : Easy</li>
-                                            <li>Distance : 11.5kms</li>
-                                            <li>Elevation : 450m</li>
-                                        </ul>
-                                        
-                                    </div>
-                                    <img class= "hoveredmap" src="images/maps/H) South Campus to Kathindi Village.png" alt="">
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-5" id="ridebxtxt">
-                            <p style="color:white;">
-                            <h3>South Campus to Kathindi Village</h3>
-                            The total distance up and down is 11.5 km approx., with a steep climb of 450 m.
-                            
-                            <br><br><a target="to_blank" href="https://strava.app.link/s4WtZz9vx5">
-                            Trail Link
-                            </a></p>
-                        </div>
-                    </div>
-                    <div class="row reversecol ridebox-2">
-                        <div class="col-lg-5" id="ridebxtxt">
-                            <p style="color:white;">
-                            <h3>Doohki Village</h3>
-                            Doohki village, situated at the top, hosts scenic beauty all around it. The best time to visit this village is in the evening, around sunset, just after a rainy day.
-                            
-                            <br><br><a target="to_blank" href="https://www.alltrails.com/explore/recording/recording-mar-01-01-51-pm-ddb4955?u=m">
-                            Trail Link
-                            </a></p>
-                        </div>
-                        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                        <div class="col-lg-5">
-                            <div class="ridebox" style="float: right;">
-                                <img class=" img-fluid" src="images/doohki - sonu chhillar.jpeg" style="border-radius:10px; "><br>
-                                <div class="fadedbox">
-                                    <div class="title-text">
-                                        <ul>
-                                            <li>Difficulty : Easy</li>
-                                            <li>Distance : 19kms</li>
-                                            <li>Elevation : 739m</li>
-                                        </ul>
-                                        
-                                    </div>
-                                    <img class= "hoveredmap" src="images/maps/I) Doohki Village.png" alt="">
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="row ridebox-2">
-                        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                        <div class="col-lg-5">
-                            <div class="ridebox">
-                                <img class=" img-fluid" src="images/Navlay - sonu chhillar.jpeg" style="border-radius:10px; "><br>
-                                <div class="fadedbox">
-                                    <div class="title-text">
-                                        <ul>
-                                            <li>Difficulty : Easy</li>
-                                            <li>Distance : 12.8kms</li>
-                                            <li>Elevation : 722m</li>
-                                        </ul>
-                                        
-                                    </div>
-                                    <img class= "hoveredmap" src="images/maps/J) Navlay.png" alt="">
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-5" id="ridebxtxt">
-                            <p style="color:white;">
-                            <h3>Navlay</h3>
-                            On a daily basis, it's a simple ride.Don't forget to have tea at the shop in Navlay. One can view Parashar forest from Navlay.
-                            
-                            <br><br><a target="to_blank" href="https://strava.app.link/zEvbae0Ax5">
-                            Trail Link
-                            </a></p>
-                        </div>
-                    </div>
-                    <div class="row reversecol ridebox-2">
-                        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                        <div class="col-lg-5" id="ridebxtxt">
-                            <p style="color:white;">
-                            <h3>Riyagdi with Offroad </h3>
-                            If we follow the Uhl river upwards, we will reach Riyagadi village. A lush green valley with an almost flat trail. After Riyagadi starts off road, two options are available to us. Follow the flat off road to reach the end, or take it downhill to reach the river bank. Both are worth taking.
-                            
-                            <br><br><a target="to_blank" href="https://www.strava.com/activities/3104468827">
-                            Trail Link
-                            </a></p>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="ridebox" style="float: right;">
-                                <img class=" img-fluid" src="images/Riyagarhi - sonu chhillar.jpeg" style="border-radius:10px; "><br>
-                                <div class="fadedbox">
-                                    <div class="title-text">
-                                        <ul>
-                                            <li>Difficulty : Easy</li>
-                                            <li>Distance : 19.6kms</li>
-                                            <li>Elevation : 1018m</li>
-                                        </ul>
-                                    
-                                    </div>
-                                    <img class= "hoveredmap" src="images/maps/K) Riyagadi with offroad.png" alt="">
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="row ridebox-2">
-                        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                        <div class="col-lg-5">
-                            <div class="ridebox">
-                                <img class=" img-fluid" src="images/arneher-ride.jpg" style="border-radius:10px; "><br>
-                                <div class="fadedbox">
-                                    <div class="title-text">
-                                        <ul>
-                                            <li>Difficulty : Easy</li>
-                                            <li>Distance : 19.21kms</li>
-                                            <li>Elevation : 1573m</li>
-                                        </ul>
-                                        
-                                    </div>
-                                    <img class= "hoveredmap" src="images/maps/L)  arneher-ridemap.png" alt="">
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-5" id="ridebxtxt">
-                            <p style="color:white;">
-                            <h3>Arneher</h3>
-                            A medium level ride was organized to Arneher on 27 March 2022. It started from the North campus covering a total distance of 20kms. This ride was intended for the beginners and proper exercise and workshop organized for the beginners to get comfortable with club bikes and to know the difficulties faced during rides.
-                            
-                            <br><br><a target="to_blank" href="https://www.strava.com/activities/6889107570">
-                            Trail Link
-                            </a></p>
-                        </div>
-                    </div>
-                    <div class="row reversecol ridebox-2">
-                        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                        <div class="col-lg-5" id="ridebxtxt">
-                            <p style="color:white;">
-                            <h3>Girl’s special Ride to Riyagarhi</h3>
-                            In order to encourage girl’s participation in cycling, MTB club organized a first girl’s special ride where only girls will coordinate and ride cycles.  The ride was started from Jassi canteen to Riyagarhi  and back to North Campus. A total of 8 girls went on the ride individually. Total distance covered in this ride was 23 kms. It was a great initiative done by the club to improve The girls participate in cycling. This girls special ride gave confidence to the girls that they can handle all things, be it riding on tough terrain or handling a puncture in a tyre.                             
-                            <br><br><a target="to_blank" href="https://www.strava.com/activities/3104468827">
-                            Trail Link
-                            </a></p>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="ridebox" style="float: right;">
-                                <img class=" img-fluid" src="images/girls-only-ride-2022.jpg" style="border-radius:10px; "><br>
-                                <div class="fadedbox">
-                                    <div class="title-text">
-                                        <ul>
-                                            <li>Difficulty : Easy</li>
-                                            <li>Distance : 19.6kms</li>
-                                            <li>Elevation : 1018m</li>
-                                        </ul>
-                                    
-                                    </div>
-                                    <img class= "hoveredmap" src="images/maps/K) Riyagadi with offroad.png" alt="">
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="row ridebox-2">
-                        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                        <div class="col-lg-5">
-                            <div class="ridebox">
-                                <img class=" img-fluid" src="images/farewell-ride-2022.JPG" style="border-radius:10px; "><br>
-                                <div class="fadedbox">
-                                    <div class="title-text">
-                                        <ul>
-                                            <li>Difficulty : Easy</li>
-                                            <li>Distance : 33.61kms</li>
-                                            <li>Elevation : 1894m</li>
-                                        </ul>
-                                        
-                                    </div>
-                                    <img class= "hoveredmap" src="images/maps/farewell-ride-map.png" alt="">
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-5" id="ridebxtxt">
-                            <p style="color:white;">
-                            <h3>Ride for Graduating Batch</h3>
-                            As there were only a few days left for the 2022 graduating batch. So, the MTB club  organized a ride especially for the graduating batch. The route of the ride was a closed loop started from North  Campus then covering the root of Riyagarhi, then Bhateri, from Bhateri to Kataula and then from Bhateri back to North Campus. The total distance covered in the ride was 35 kms. This farewell ride was given by the MTB club. With this last ride, the graduated batch took the memories of riding in the hills with them.                               
-                            <br><br><a target="to_blank" href="https://www.strava.com/activities/7176886660">
-                            Trail Link
-                            </a></p>
-                        </div>
-                    </div>
+            .swiper {
+              width: 100%;
+              height: 100%;
+            }
 
-                </div>
-            </div>
-            <!-- end of container -->
-        </div>
-        <!-- end of basic-2 -->
-        </div>
-        <div id="contact" class="form">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2>CONTACT</h2>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="address">You may contact us for further queries on</li>
-                            <li>
-                                <span class="fa-stack">
-                                <a href="mailto:mtb@students.iitmandi.ac.in" target="_blank">
-                                <i class="fas fa-envelope"></i>
-                                </a>
-                                </span>
-                                Write to us on <a class="blue" href="mailto:mtb@students.iitmandi.ac.in">mtb@students.iitmandi.ac.in</a></li>
-                            <br>
-                            <li>
-                                <span class="fa-stack">
-                                <a href="https://www.facebook.com/IITMandiMTB/" target="_blank">
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                                </span>
-                                Follow us on Facebook: <a href="https://www.facebook.com/IITMandiMTB" target="_blank">https://www.facebook.com/IITMandiMTB</a>
-                            </li>
-                            <br>  
-                            <li>
-                                <span class="fa-stack">
-                                <a href="https://www.strava.com/clubs/mtbiitmandi" target="_blank">
-                                    <i class="fab fa-strava"></i>
-                                </a>
-                                </span>
-                                Join the journey on Strava: <a href="https://www.strava.com/clubs/mtbiitmandi" target="_blank">https://www.strava.com/clubs/mtbiitmandi</a></li>
-                            <br>
-                            <li>
-                                <span class="fa-stack">
-                                <a href="https://www.instagram.com/mtb_iitmandi/" target="_blank">
-                                <i class="fab fa-instagram" aria-hidden="true"></i>
-                                </a>
-                                </span>
-                                Connect with us on Instagram : <a href="https://www.instagram.com/mtb_iitmandi/" target="_blank">https://www.instagram.com/mtb_iitmandi/</a></li>
+            .swiper-slide {
+              text-align: center;
+              font-size: 16px;
+              height: auto;
+              width: 500px;
+
+              /* Center slide text vertically */
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              -webkit-justify-content: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              -webkit-align-items: center;
+              align-items: center;
+            }
+
+            .swiper-slide img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          </style>
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="row ridebox-2 swiper-slide align-items-start">
+                <!-- Slide1 -->
+                <!-- <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button> -->
+                <div class="col-lg-5">
+                  <div class="ridebox">
+                    <img
+                      class="img-fluid"
+                      src="images/trails/bajaura.jpg"
+                      style="border-radius: 10px"
+                    /><br />
+                    <div class="fadedbox">
+                      <div class="title-text">
+                        <ul>
+                          <li>Difficulty : Hard</li>
+                          <li>Distance : 115.4kms</li>
+                          <li>Elevation : 2256m</li>
                         </ul>
+                      </div>
+                      <img
+                        class="hoveredmap"
+                        src="images/maps/A) Doohki-Pandoh-Bajaura-Kandhi.png"
+                        alt=""
+                      />
                     </div>
-                    <!-- end of col -->
+                  </div>
                 </div>
-                <!-- end of row -->
-            </div>
-            <!-- end of container -->
-        </div>
-        <!-- end of form -->
-        <!-- end of contact -->
-        <div class="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p class="p-small"> © 2022 MtB IIT Mandi</p>
+                <div class="col-lg-5 my-auto" id="ridebxtxt">
+                  <p style="color: white"></p>
+                  <h3>
+                    Round Trip: IIT Mandi-Doohki-Pandoh-Bajaura-Kandhi-IIT Mandi
+                  </h3>
+                  <p>
+                    A day-long ride with a stretch of 125 km with an approx.
+                    2500 m elevation gain tests a rider's endurance level. Pro
+                    level is required to complete the round trip. The toughest
+                    part is the climb of 1200m from Bajaura to Kandhi, after 78
+                    km of riding and having gained an elevation of 1300m. Stay
+                    hydrated and don't forget to have lunch somewhere in
+                    between. A few places for sightseeing are Pandoh Dam, Hanogi
+                    Devi Temple & Bridge, the river flowing alongside the road
+                    near Aut & Bajaura, the Bajaura valley enroute to Kandhi
+                    Pass, the Kamand Valley from Kandhi Pass etc.
+                    <br /><br />Backpack: Multi-toolkit, puncture kit, front &
+                    back lights (to cross the tunnel near Aut), fruits,
+                    especially bananas, dry fruits, and approx. 6 ORS packets.
+
+                    <br /><br /><a
+                      target="to_blank"
+                      href="https://www.strava.com/activities/3780486249#2719574739373440250"
+                    >
+                      Trail Link
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="row ridebox-2 swiper-slide align-items-center">
+                <!-- <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button> -->
+                <div class="col-lg-5">
+                  <div class="ridebox">
+                    <img
+                      class="img-fluid"
+                      src="images/rohtang-ride.jpg"
+                      style="border-radius: 10px"
+                    /><br />
+                    <div class="fadedbox">
+                      <div class="title-text">
+                        <ul>
+                          <li>Difficulty : Hard</li>
+                          <li>Distance : 300.2kms</li>
+                          <li>Elevation : 9498m</li>
+                        </ul>
+                      </div>
+                      <img
+                        class="hoveredmap"
+                        src="images/maps/rohtang-ride-map.png"
+                        alt=""
+                      />
                     </div>
-                    <!-- end of col -->
+                  </div>
                 </div>
-                <!-- enf of row -->
+                <div class="col-lg-5 my-auto" id="ridebxtxt">
+                  <p style="color: white"></p>
+                  <h3>Ride to Rohtang Pass</h3>
+                  <p>
+                    This was a 4 day long ride conducted by the MTB. The total 6
+                    members went on this ride individually.The total distance
+                    covered in this ride was 260 kms. The journey of the ride
+                    was started from the North Campus on 18th of June. On the
+                    first day of ride the total distance covered was 87 kms
+                    which was from North Campus to Manali. Then on the second
+                    day, the route from Manali to Marhi was covered, which is 30
+                    kms. On the third day, the ride was from Marhi to Rohtang
+                    then Sissu and back to Manali, which covered a distance of
+                    56 kms. On 21st of June, the riders ride from Manali to
+                    Campus and journey came to an end with 87 kms. This was a
+                    great ride conducted only for the experienced riders of the
+                    club.
+                    <br /><br />
+                    <a
+                      target="to_blank"
+                      href="https://www.alltrails.com/explore/recording/day-1-to-manali-13f9896"
+                    >
+                      Trail Link
+                    </a>
+                  </p>
+                </div>
+              </div>
             </div>
-            <!-- end of container -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <!-- end of row -->
+          <div class="dash"></div>
+          <h2 align="center">MEDIUM RIDES</h2>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="row ridebox-2 swiper-slide align-items-start">
+                <!-- <button
+                  title="Close (Esc)"
+                  type="button"
+                  class="mfp-close x-button"
+                >
+                  ×
+                </button> -->
+                <div class="col-lg-5">
+                  <div class="ridebox" style="float: right">
+                    <img
+                      class="img-fluid"
+                      src="images/trails/miyoli.jpg"
+                      style="border-radius: 10px"
+                    /><br />
+                    <div class="fadedbox">
+                      <div class="title-text">
+                        <ul>
+                          <li>Difficulty : Hard</li>
+                          <li>Distance : 48.3kms</li>
+                          <li>Elevation : 3207m</li>
+                        </ul>
+                      </div>
+                      <img
+                        class="hoveredmap"
+                        src="images/maps/B) Miyoli village.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 my-auto" id="ridebxtxt">
+                  <p style="color: white"></p>
+                  <h3>Miyoli Village</h3>
+                  <p>
+                    The trail is a little off-road. The scenery is magnificent,
+                    with a majestic view of the river and hanging bridges, and
+                    the difficulty level is easy. This trail connects to Mandi
+                    city.
+
+                    <br /><br /><a
+                      target="to_blank"
+                      href=" https://strava.app.link/pmP2U6Cwx5"
+                    >
+                      Trail Link
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <!-- end of row -->
+              <div class="row ridebox-2 swiper-slide align-items-start">
+                <!-- <button
+                  title="Close (Esc)"
+                  type="button"
+                  class="mfp-close x-button"
+                >
+                  ×
+                </button> -->
+                <div class="col-lg-5">
+                  <div class="ridebox">
+                    <img
+                      class="img-fluid"
+                      src="images/trails/diana-park.jpeg"
+                      style="border-radius: 10px"
+                    /><br />
+                    <div class="fadedbox">
+                      <div class="title-text">
+                        <ul>
+                          <li>Difficulty : Moderate</li>
+                          <li>Distance : 30.1kms</li>
+                          <li>Elevation : 1131m</li>
+                        </ul>
+                      </div>
+                      <img
+                        class="hoveredmap"
+                        src="images/maps/C) Diana Park.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 my-auto" id="ridebxtxt">
+                  <p style="color: white"></p>
+                  <h3>Diana Park</h3>
+                  <p>
+                    Diana Park is situated at the intersection of two valleys.
+                    The Dhauladhar range is clearly visible from this point.
+                    Scenic beauty enroute Diana which will make you feel
+                    nostalgic. It is a moderate to tough-level ride, depending
+                    on the rider.
+
+                    <br /><br /><a
+                      target="to_blank"
+                      href="https://www.alltrails.com/explore/recording/baghi?u=m"
+                    >
+                      Trail Link
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="row ridebox-2 swiper-slide align-items-start">
+                <!-- <button
+                  title="Close (Esc)"
+                  type="button"
+                  class="mfp-close x-button"
+                >
+                  ×
+                </button> -->
+                <div class="col-lg-5">
+                  <div class="ridebox" style="float: right">
+                    <img
+                      class="img-fluid"
+                      src="images/trails/baggi1.jpg"
+                      style="border-radius: 10px"
+                    /><br />
+                    <div class="fadedbox">
+                      <div class="title-text">
+                        <ul>
+                          <li>Difficulty : Moderate</li>
+                          <li>Distance : 30.1kms</li>
+                          <li>Elevation : 1131m</li>
+                        </ul>
+                      </div>
+                      <img
+                        class="hoveredmap"
+                        src="images/maps/D) South Campus to Baghi Nallah.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 my-auto" id="ridebxtxt">
+                  <p style="color: white"></p>
+                  <h3>South Campus to Baghi Nallah</h3>
+                  <p>
+                    One has to cross Baghi Nallah on the way to Prashar Lake. It
+                    is around 15 km from the campus and the ride is moderate
+                    from the south campus.
+
+                    <br /><br /><a
+                      target="to_blank"
+                      href="https://www.alltrails.com/explore/recording/baghi?u=m"
+                    >
+                      Trail Link
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="row ridebox-2 swiper-slide align-items-start">
+                <!-- <button
+                  title="Close (Esc)"
+                  type="button"
+                  class="mfp-close x-button"
+                >
+                  ×
+                </button> -->
+                <div class="col-lg-5">
+                  <div class="ridebox">
+                    <img
+                      class="img-fluid"
+                      src="images/mtb/gharan.jpg"
+                      style="border-radius: 10px"
+                    /><br />
+                    <div class="fadedbox">
+                      <div class="title-text">
+                        <ul>
+                          <li>Difficulty : Hard</li>
+                          <li>Distance : 50kms</li>
+                          <li>Elevation : 1974m</li>
+                        </ul>
+                      </div>
+                      <img
+                        class="hoveredmap"
+                        src="images/maps/E) Kamand-Doohki-Gharan-Mandi-Kathindi-Kamand.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 my-auto" id="ridebxtxt">
+                  <p style="color: white"></p>
+                  <h3>Loop: Kamand-Doohki-Gharan-Mandi-Kathindi-Kamand</h3>
+                  <p>
+                    A 50 km loop from Kamand via Doohki-Gharan-Mandi. We climb
+                    up to Doohki, followed by a steep downhill to Gharan, where
+                    we follow the Kullu-Mandi Highway till Mandi and then the
+                    Kathindi Climb, which becomes difficult if the rider is
+                    exhausted.
+
+                    <br /><br /><a
+                      target="to_blank"
+                      href="https://www.alltrails.com/explore/recording/recording-aug-03-08-11-pm?u=m"
+                    >
+                      Trail Link
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="row ridebox-2 swiper-slide align-items-start">
+                <!-- <button
+                  title="Close (Esc)"
+                  type="button"
+                  class="mfp-close x-button"
+                >
+                  ×
+                </button> -->
+                <div class="col-lg-5">
+                  <div class="ridebox" style="float: right">
+                    <img
+                      class="img-fluid"
+                      src="images/Parashar1 - sonu chhillar.jpeg"
+                      style="border-radius: 10px"
+                    /><br />
+                    <div class="fadedbox">
+                      <div class="title-text">
+                        <ul>
+                          <li>Difficulty : Moderate</li>
+                          <li>Distance : 35.23kms</li>
+                          <li>Elevation : 2122m</li>
+                        </ul>
+                      </div>
+                      <img
+                        class="hoveredmap"
+                        src="images/maps/F) Parasher Lake.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 my-auto" id="ridebxtxt">
+                  <p style="color: white"></p>
+                  <h3>Parashar Lake</h3>
+                  <p>
+                    Parashar takes effort from the rider's side. One can divide
+                    this ride into 4 segments with stops at Baghi, One Love
+                    Cafe, and Bogchi Cafe. One Love Cafe to Bogchi Cafe has a
+                    steep climb through the forest. Be careful to refill your
+                    water at each stop. No water source is available after one
+                    love cafe.
+
+                    <br /><br /><a
+                      target="to_blank"
+                      href="https://www.alltrails.com/explore/recording/recording-sep-28-02-47-pm--3?u=m"
+                    >
+                      Trail Link
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="row ridebox-2 swiper-slide align-items-start">
+                <!-- <button
+                  title="Close (Esc)"
+                  type="button"
+                  class="mfp-close x-button"
+                >
+                  ×
+                </button> -->
+                <div class="col-lg-5">
+                  <div class="ridebox">
+                    <img
+                      class="img-fluid"
+                      src="images/trails/darang22.jpg"
+                      style="border-radius: 10px"
+                    /><br />
+                    <div class="fadedbox">
+                      <div class="title-text">
+                        <ul>
+                          <li>Difficulty : Hard</li>
+                          <li>Distance : 57.36kms</li>
+                          <li>Elevation : 2070m</li>
+                        </ul>
+                      </div>
+                      <img
+                        class="hoveredmap"
+                        src="images/maps/G) Kamand-Kathindi-Drang-Mandi-Skore-Kamand.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <br />
+                </div>
+                <div class="col-lg-5 my-auto" id="ridebxtxt">
+                  <p style="color: white"></p>
+                  <h3>Loop: Kamand-Kathindi-Drang-Mandi-Skore-Kamand</h3>
+                  <p>
+                    After a steep climb to Kathindi, take a right on the Drang
+                    road to meet a downhill road. From Drang to Mandi, we need
+                    to take the Mandi-Jogindernagar highway, so be cautious
+                    while on the highway. Take the exit to Skore from Mandi. It
+                    lies around 500m before the Bhuli bridge. The road is paved
+                    till Skore, but after that, the real offroad starts with no
+                    one around it. There is no help available afterwards. Keep
+                    an essential toolkit with you if you are planning to take
+                    this road.
+
+                    <br /><br /><a
+                      target="to_blank"
+                      href="https://www.alltrails.com/explore/recording/recording-feb-08-0602-pm?u=m"
+                    >
+                      Trail Link
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="row ridebox-2 swiper-slide align-items-start">
+                <!-- <button
+                  title="Close (Esc)"
+                  type="button"
+                  class="mfp-close x-button"
+                >
+                  ×
+                </button> -->
+                <div class="col-lg-5">
+                  <div class="ridebox" style="float: right">
+                    <img
+                      class="img-fluid"
+                      src="images/kandhi-ride.jpg"
+                      style="border-radius: 10px"
+                    /><br />
+                    <div class="fadedbox">
+                      <div class="title-text">
+                        <ul>
+                          <li>Difficulty : Moderate</li>
+                          <li>Distance : 31.15kms</li>
+                          <li>Elevation : 856m</li>
+                        </ul>
+                      </div>
+                      <img
+                        class="hoveredmap"
+                        src="images/maps/M) kandi-ridemap.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 my-auto" id="ridebxtxt">
+                  <p style="color: white"></p>
+                  <h3>Kandhi</h3>
+                  <p>
+                    This ride was organized to the Kandhi village on 24 April
+                    2022 and the distance covered was approximately 40kms.
+
+                    <br /><br /><a
+                      target="to_blank"
+                      href="https://www.strava.com/activities/7031670481"
+                    >
+                      Trail Link
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="dash"></div>
+          <h2 align="center">SHORT RIDES</h2>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="row ridebox-2 swiper-slide align-items-start">
+                <!-- <button
+                  title="Close (Esc)"
+                  type="button"
+                  class="mfp-close x-button"
+                >
+                  ×
+                </button> -->
+                <div class="col-lg-5">
+                  <div class="ridebox">
+                    <img
+                      class="img-fluid"
+                      src="images/trails/kathindi.jpg"
+                      style="border-radius: 10px"
+                    /><br />
+                    <div class="fadedbox">
+                      <div class="title-text">
+                        <ul>
+                          <li>Difficulty : Easy</li>
+                          <li>Distance : 11.5kms</li>
+                          <li>Elevation : 450m</li>
+                        </ul>
+                      </div>
+                      <img
+                        class="hoveredmap"
+                        src="images/maps/H) South Campus to Kathindi Village.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 my-auto" id="ridebxtxt">
+                  <p style="color: white"></p>
+                  <h3>South Campus to Kathindi Village</h3>
+                  <p>
+                    The total distance up and down is 11.5 km approx., with a
+                    steep climb of 450 m.
+
+                    <br /><br /><a
+                      target="to_blank"
+                      href="https://strava.app.link/s4WtZz9vx5"
+                    >
+                      Trail Link
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="row ridebox-2 swiper-slide align-items-start">
+                <!-- <button
+                    title="Close (Esc)"
+                    type="button"
+                    class="mfp-close x-button"
+                    >
+                    ×
+                </button> -->
+                <div class="col-lg-5">
+                  <div class="ridebox" style="float: right">
+                    <img
+                      class="img-fluid"
+                      src="images/doohki - sonu chhillar.jpeg"
+                      style="border-radius: 10px"
+                    /><br />
+                    <div class="fadedbox">
+                      <div class="title-text">
+                        <ul>
+                          <li>Difficulty : Easy</li>
+                          <li>Distance : 19kms</li>
+                          <li>Elevation : 739m</li>
+                        </ul>
+                      </div>
+                      <img
+                        class="hoveredmap"
+                        src="images/maps/I) Doohki Village.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 my-auto" id="ridebxtxt">
+                  <p style="color: white"></p>
+                  <h3>Doohki Village</h3>
+                  <p>
+                    Doohki village, situated at the top, hosts scenic beauty all
+                    around it. The best time to visit this village is in the
+                    evening, around sunset, just after a rainy day.
+
+                    <br /><br /><a
+                      target="to_blank"
+                      href="https://www.alltrails.com/explore/recording/recording-mar-01-01-51-pm-ddb4955?u=m"
+                    >
+                      Trail Link
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="row ridebox-2 swiper-slide align-items-start">
+                <!-- <button
+                  title="Close (Esc)"
+                  type="button"
+                  class="mfp-close x-button"
+                >
+                  ×
+                </button> -->
+                <div class="col-lg-5">
+                  <div class="ridebox">
+                    <img
+                      class="img-fluid"
+                      src="images/Navlay - sonu chhillar.jpeg"
+                      style="border-radius: 10px"
+                    /><br />
+                    <div class="fadedbox">
+                      <div class="title-text">
+                        <ul>
+                          <li>Difficulty : Easy</li>
+                          <li>Distance : 12.8kms</li>
+                          <li>Elevation : 722m</li>
+                        </ul>
+                      </div>
+                      <img
+                        class="hoveredmap"
+                        src="images/maps/J) Navlay.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 my-auto" id="ridebxtxt">
+                  <p style="color: white"></p>
+                  <h3>Navlay</h3>
+                  <p>
+                    On a daily basis, it's a simple ride.Don't forget to have
+                    tea at the shop in Navlay. One can view Parashar forest from
+                    Navlay.
+
+                    <br /><br /><a
+                      target="to_blank"
+                      href="https://strava.app.link/zEvbae0Ax5"
+                    >
+                      Trail Link
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="row ridebox-2 swiper-slide align-items-start">
+                <!-- <button
+                  title="Close (Esc)"
+                  type="button"
+                  class="mfp-close x-button"
+                >
+                  ×
+                </button> -->
+                <div class="col-lg-5">
+                  <div class="ridebox" style="float: right">
+                    <img
+                      class="img-fluid"
+                      src="images/Riyagarhi - sonu chhillar.jpeg"
+                      style="border-radius: 10px"
+                    /><br />
+                    <div class="fadedbox">
+                      <div class="title-text">
+                        <ul>
+                          <li>Difficulty : Easy</li>
+                          <li>Distance : 19.6kms</li>
+                          <li>Elevation : 1018m</li>
+                        </ul>
+                      </div>
+                      <img
+                        class="hoveredmap"
+                        src="images/maps/K) Riyagadi with offroad.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 my-auto" id="ridebxtxt">
+                  <p style="color: white"></p>
+                  <h3>Riyagdi with Offroad</h3>
+                  <p>
+                    If we follow the Uhl river upwards, we will reach Riyagadi
+                    village. A lush green valley with an almost flat trail.
+                    After Riyagadi starts off road, two options are available to
+                    us. Follow the flat off road to reach the end, or take it
+                    downhill to reach the river bank. Both are worth taking.
+
+                    <br /><br /><a
+                      target="to_blank"
+                      href="https://www.strava.com/activities/3104468827"
+                    >
+                      Trail Link
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="row ridebox-2 swiper-slide align-items-start">
+                <!-- <button
+                  title="Close (Esc)"
+                  type="button"
+                  class="mfp-close x-button"
+                >
+                  ×
+                </button> -->
+                <div class="col-lg-5">
+                  <div class="ridebox">
+                    <img
+                      class="img-fluid"
+                      src="images/arneher-ride.jpg"
+                      style="border-radius: 10px"
+                    /><br />
+                    <div class="fadedbox">
+                      <div class="title-text">
+                        <ul>
+                          <li>Difficulty : Easy</li>
+                          <li>Distance : 19.21kms</li>
+                          <li>Elevation : 1573m</li>
+                        </ul>
+                      </div>
+                      <img
+                        class="hoveredmap"
+                        src="images/maps/L)  arneher-ridemap.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 my-auto" id="ridebxtxt">
+                  <p style="color: white"></p>
+                  <h3>Arneher</h3>
+                  <p>
+                    A medium level ride was organized to Arneher on 27 March
+                    2022. It started from the North campus covering a total
+                    distance of 20kms. This ride was intended for the beginners
+                    and proper exercise and workshop organized for the beginners
+                    to get comfortable with club bikes and to know the
+                    difficulties faced during rides.
+
+                    <br /><br /><a
+                      target="to_blank"
+                      href="https://www.strava.com/activities/6889107570"
+                    >
+                      Trail Link
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="row ridebox-2 swiper-slide align-items-start">
+                <!-- <button
+                  title="Close (Esc)"
+                  type="button"
+                  class="mfp-close x-button"
+                >
+                  ×
+                </button> -->
+                <div class="col-lg-5">
+                  <div class="ridebox" style="float: right">
+                    <img
+                      class="img-fluid"
+                      src="images/girls-only-ride-2022.jpg"
+                      style="border-radius: 10px"
+                    /><br />
+                    <div class="fadedbox">
+                      <div class="title-text">
+                        <ul>
+                          <li>Difficulty : Easy</li>
+                          <li>Distance : 19.6kms</li>
+                          <li>Elevation : 1018m</li>
+                        </ul>
+                      </div>
+                      <img
+                        class="hoveredmap"
+                        src="images/maps/K) Riyagadi with offroad.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 my-auto" id="ridebxtxt">
+                  <p style="color: white"></p>
+                  <h3>Girl’s special Ride to Riyagarhi</h3>
+                  <p>
+                    In order to encourage girl’s participation in cycling, MTB
+                    club organized a first girl’s special ride where only girls
+                    will coordinate and ride cycles. The ride was started from
+                    Jassi canteen to Riyagarhi and back to North Campus. A total
+                    of 8 girls went on the ride individually. Total distance
+                    covered in this ride was 23 kms. It was a great initiative
+                    done by the club to improve The girls participate in
+                    cycling. This girls special ride gave confidence to the
+                    girls that they can handle all things, be it riding on tough
+                    terrain or handling a puncture in a tyre.
+                    <br /><br /><a
+                      target="to_blank"
+                      href="https://www.strava.com/activities/3104468827"
+                    >
+                      Trail Link
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="row ridebox-2 swiper-slide align-items-start">
+                <!-- <button
+                  title="Close (Esc)"
+                  type="button"
+                  class="mfp-close x-button"
+                >
+                  ×
+                </button> -->
+                <div class="col-lg-5">
+                  <div class="ridebox">
+                    <img
+                      class="img-fluid"
+                      src="images/farewell-ride-2022.JPG"
+                      style="border-radius: 10px"
+                    /><br />
+                    <div class="fadedbox">
+                      <div class="title-text">
+                        <ul>
+                          <li>Difficulty : Easy</li>
+                          <li>Distance : 33.61kms</li>
+                          <li>Elevation : 1894m</li>
+                        </ul>
+                      </div>
+                      <img
+                        class="hoveredmap"
+                        src="images/maps/farewell-ride-map.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 my-auto" id="ridebxtxt">
+                  <p style="color: white"></p>
+                  <h3>Ride for Graduating Batch</h3>
+                  <p>
+                    As there were only a few days left for the 2022 graduating
+                    batch. So, the MTB club organized a ride especially for the
+                    graduating batch. The route of the ride was a closed loop
+                    started from North Campus then covering the root of
+                    Riyagarhi, then Bhateri, from Bhateri to Kataula and then
+                    from Bhateri back to North Campus. The total distance
+                    covered in the ride was 35 kms. This farewell ride was given
+                    by the MTB club. With this last ride, the graduated batch
+                    took the memories of riding in the hills with them.
+                    <br /><br /><a
+                      target="to_blank"
+                      href="https://www.strava.com/activities/7176886660"
+                    >
+                      Trail Link
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
-        <!-- Scripts -->
-        <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-        <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
-        <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-        <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-        <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-        <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-        <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
-        <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
-        <script src="js/scripts.js"></script> <!-- Custom scripts -->
-    </body>
+      </div>
+      <!-- end of container -->
+      <!-- </div> -->
+      <!-- end of basic-2 -->
+    </div>
+    <div id="contact" class="form">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>CONTACT</h2>
+            <ul class="list-unstyled li-space-lg">
+              <li class="address">You may contact us for further queries on</li>
+              <li>
+                <span class="fa-stack">
+                  <a href="mailto:mtb@students.iitmandi.ac.in" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                </span>
+                Write to us on
+                <a class="blue" href="mailto:mtb@students.iitmandi.ac.in"
+                  >mtb@students.iitmandi.ac.in</a
+                >
+              </li>
+              <br />
+              <li>
+                <span class="fa-stack">
+                  <a
+                    href="https://www.facebook.com/IITMandiMTB/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                  </a>
+                </span>
+                Follow us on Facebook:
+                <a href="https://www.facebook.com/IITMandiMTB" target="_blank"
+                  >https://www.facebook.com/IITMandiMTB</a
+                >
+              </li>
+              <br />
+              <li>
+                <span class="fa-stack">
+                  <a
+                    href="https://www.strava.com/clubs/mtbiitmandi"
+                    target="_blank"
+                  >
+                    <i class="fab fa-strava"></i>
+                  </a>
+                </span>
+                Join the journey on Strava:
+                <a
+                  href="https://www.strava.com/clubs/mtbiitmandi"
+                  target="_blank"
+                  >https://www.strava.com/clubs/mtbiitmandi</a
+                >
+              </li>
+              <br />
+              <li>
+                <span class="fa-stack">
+                  <a
+                    href="https://www.instagram.com/mtb_iitmandi/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </span>
+                Connect with us on Instagram :
+                <a
+                  href="https://www.instagram.com/mtb_iitmandi/"
+                  target="_blank"
+                  >https://www.instagram.com/mtb_iitmandi/</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of form -->
+    <!-- end of contact -->
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="p-small">© 2022 MtB IIT Mandi</p>
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- enf of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script>
+    <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- jQuery Easing for smooth scrolling between anchors -->
+    <!-- <script src="js/swiper.min.js"></script> Swiper for image and text sliders -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script>
+    <!-- Morphtext rotating text in the header -->
+    <script src="js/validator.min.js"></script>
+    <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script>
+    <!-- Custom scripts -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        simulateTouch: false,
+      });
+    </script>
+  </body>
 </html>
