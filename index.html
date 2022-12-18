@@ -28,6 +28,7 @@
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/fontawesome-all.css" rel="stylesheet">
         <link href="css/swiper.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
         <link href="css/magnific-popup.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
         <!-- Favicon  -->
@@ -41,7 +42,7 @@
         <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top" style="background-color: white;" >
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/MTBlogo.png" style="width:70px;height:70px;" alt="MtB Logo"></a> 
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/MTBlogo.png" style="width:70px;height:70px;" alt="MtB Logo" data-aos="zoom-in"></a> 
             <!-- Mobile Menu Toggle Button -->
             <button style="color:black;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-awesome fas fa-bars"></span>
@@ -50,26 +51,26 @@
             <!-- end of mobile menu toggle button -->
             <div class="collapse navbar-collapse" id="navbarsExampleDefault" style="font-size:16px;">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item active" data-aos="zoom-in">
                         <a class="nav-link page-scroll" href="index.html" style="color:black;">HOME <span class="sr-only">(current)</span></a>
                     </li>
-                     <li class="nav-item active">
+                     <li class="nav-item active" data-aos="zoom-in">
                         <a class="nav-link page-scroll" href="facilities.html" style="color:black;">FACILITIES<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-aos="zoom-in">
                         <a class="nav-link page-scroll" href="about.html" style="color:black;">ABOUT US</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-aos="zoom-in">
                         <a class="nav-link page-scroll" href="pastrides.html" style="color:black;">PAST RIDES</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-aos="zoom-in">
                         <a class="nav-link page-scroll" href="team.html" style="color:black;">TEAM</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-aos="zoom-in">
                         <a class="nav-link page-scroll" href="blog.html" style="color:black;">BLOGS</a>
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item" data-aos="zoom-in">
                         <a class="nav-link page-scroll" href="#contact" style="color:black;">CONTACT</a>
                     </li>
                 </ul>
@@ -109,8 +110,8 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="text-container">
-                                    <h1>JOIN US<br>FOR <br><span id="js-rotating">VENTURE,BACKPACK,THRILL,WINDSWEPT PEAKS,MOUNTAIN STREAMS,AMAZING VIEWS</span></h1>
-                                    <p class="p-large">This is mountain biking nirvana. Welcome to IIT Mandi mountain biking club.</p>
+                                    <h1 data-aos="fade-up">JOIN US<br>FOR <br><span id="js-rotating">VENTURE,BACKPACK,THRILL,WINDSWEPT PEAKS,MOUNTAIN STREAMS,AMAZING VIEWS</span></h1>
+                                    <p class="p-large" data-aos="fade-up">This is mountain biking nirvana. Welcome to IIT Mandi mountain biking club.</p>
                                 </div>
                             </div>
                             <!-- end of col -->
@@ -135,11 +136,11 @@
         
         <div id="about" class="tabs">
             <div class="container">
-                <h2 style="text-align: center !important;">ABOUT US</h2>
+                <h2 style="text-align: center !important;" data-aos="fade-up">ABOUT US</h2>
                 <div class="row justify-content-centre">
                     <div class="container">
                         <div class="row justify-content-centre" style="text-align: justify;">
-                            <div class="col-sm-9 p-heading p-large  justify-content-centre" style="text-align: justify;">
+                            <div class="col-sm-9 p-heading p-large  justify-content-centre" style="text-align: justify;"  data-aos="fade-up">
                                 Draped around by the great Himalayan mountains, with the scenic resplendency of mother nature, windswept peaks, encompassed by many holy rivers, and adventure all around, we, the MtB (Mountain Biking club) at IIT Mandi, welcome you all to be a part of this journey! 
 <br><br>The MtB club is embarking upon a peregrination in the lap of the Himalayas with the most spectacular destination and astounding trails, which is a crown jewel in itself for IIT Mandi. 
 <br><br>Riding from the finest roads to the astonishing Himalayan forests, fascinated by the snow-capped mountains and many more adventures along the way, it is a great opportunity for all of us to relish the glory of nature differently.
@@ -163,14 +164,417 @@
             </div>
             <!-- end of container --> 
         </div>
+
+        <!-- Achievements Section -->
+        <style>
+            table, th, td{
+                border: 2px solid white;
+                padding: 4px;
+            }
+        </style>
+
+        <div class="container basic-2">
+            <h2 style="text-align: center !important;margin-bottom: 50px;" data-aos="fade-up">LATEST ACHIEVEMENTS</h2>
+            <div class="row justify-content-centre">
+                <div class="container">
+                    <div class="row justify-content-centre" style="text-align: justify;">
+                        <div class="col-sm-9 p-heading p-large  justify-content-centre" style="text-align: justify;">
+                            <div class="achievements" data-aos="fade-up">
+                                <h3 style="text-align:center;text-decoration:underline">PAN IIT Cycling Event</h3>
+                                <h4 >TEAM RESULTS</h4>
+                                <p>Overall Position: First</p>
+                                <table class="achivements-table" style="width:100%">
+                                    <th>
+                                        <td>Category</td>
+                                        <td>Stats</td>
+                                        <td>Position</td>
+                                    </th>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>Distance - Team</td>
+                                        <td>4382.9 km</td>
+                                        <td>1st Position</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.</td>
+                                        <td>Average Speed - Team</td>
+                                        <td>30.5 km/h</td>
+                                        <td>1st Position</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3.</td>
+                                        <td>Elevation Gain - Team</td>
+                                        <td>78309 m</td>
+                                        <td>1st Position</td>
+                                    </tr>
+                                </table>
+                            </div>
+                                <br>
+                            <div class="achievements" data-aos="fade-up">
+                                <h4 style="margin-top:30px">MENS RESULTS</h4>
+                                <h5>Overall Results:</h5>
+                                <table class="achivements-table" style="width:100%;margin-bottom: 20px;">
+                                    <th>
+                                        <td>Participant Name</td>
+                                        <td>Overall Position</td>
+                                    </th>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>Shubham Prakash</td>
+                                        <td>2nd Position</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.</td>
+                                        <td>Sahil</td>
+                                        <td>4th Position</td>
+                                    </tr>
+                                </table>
+                                <h5>Category Results:</h5>
+                                <table class="achivements-table" style="width:100%">
+                                    <th>
+                                        <td>Participant Name</td>
+                                        <td>Category</td>
+                                        <td>Stats</td>
+                                        <td>Position</td>
+                                    </th>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>Shubham Prakash</td>
+                                        <td>Distance - Men</td>
+                                        <td>765.3 km</td>
+                                        <td>1st Position</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.</td>
+                                        <td>Sachit Yadav</td>
+                                        <td>Average Speed - Men</td>
+                                        <td>37.6 km/h</td>
+                                        <td>1st Position</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3.</td>
+                                        <td>Rajat Kaushik</td>
+                                        <td>Average Speed - Men</td>
+                                        <td>29.4 km/h</td>
+                                        <td>5th Position</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4.</td>
+                                        <td>Shubham Prakash</td>
+                                        <td>Elevation Gain - Men</td>
+                                        <td>12495 m</td>
+                                        <td>1st Position</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5.</td>
+                                        <td>Arnav</td>
+                                        <td>Elevation Gain - Men</td>
+                                        <td>6114 m</td>
+                                        <td>3rd Position</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6.</td>
+                                        <td>Sahil</td>
+                                        <td>Elevation Gain - Men</td>
+                                        <td>5607 m</td>
+                                        <td>4th Position</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7.</td>
+                                        <td>Trishu Verma</td>
+                                        <td>Elevation Gain - Men</td>
+                                        <td>5170 m</td>
+                                        <td>5th Position</td>
+                                    </tr>
+                                </table>
+                                
+                            </div>
+
+                            <div class="achievements" data-aos="fade-up">
+                                <h4 style="margin-top:30px">WOMENS RESULTS</h4>
+                                <h5>Overall Results:</h5>
+                                <table class="achivements-table" style="width:100%;margin-bottom: 20px;">
+                                    <th>
+                                        <td>Participant Name</td>
+                                        <td>Overall Position</td>
+                                    </th>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>Ritu Shukla</td>
+                                        <td>1st Position</td>
+                                    </tr>
+                                </table>
+                                <h5>Category Results:</h5>
+                                <table class="achivements-table" style="width:100%">
+                                    <th>
+                                        <td>Participant Name</td>
+                                        <td>Category</td>
+                                        <td>Stats</td>
+                                        <td>Position</td>
+                                    </th>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>Ritu Shukla</td>
+                                        <td>Distance - Women</td>
+                                        <td>268.2 km</td>
+                                        <td>1st Position</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.</td>
+                                        <td>Ritu Shukla</td>
+                                        <td>Average Speed - Women</td>
+                                        <td>17.1 km/h</td>
+                                        <td>5th Position</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3.</td>
+                                        <td>Ritu Shukla</td>
+                                        <td>Elevation Gain - Women</td>
+                                        <td>1612 m</td>
+                                        <td>1st Position</td>
+                                    </tr>
+                                </table>
+                                
+                            </div>
+
+                            <div class="achievements" data-aos="fade-up" style="margin-top:70px">
+                                <h3 style="text-align:center;text-decoration:underline">Spardha Championship</h3>
+                                <h4>Overall Results - Men</h4>
+                                <table class="achivements-table" style="width:100%">
+                                    <th>
+                                        <td>Participant Name</td>
+                                        <td>Points</td>
+                                        <td>Position</td>
+                                    </th>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>Sachit Yadav</td>
+                                        <td>136 pts.</td>
+                                        <td>1st Position</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.</td>
+                                        <td>Shubham Prakash</td>
+                                        <td>133 pts.</td>
+                                        <td>2nd Position</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="achievements" data-aos="fade-up" style="margin-top:20px">
+                                <h4>Overall Results - Women</h4>
+                                <table class="achivements-table" style="width:100%">
+                                    <th>
+                                        <td>Participant Name</td>
+                                        <td>Points</td>
+                                        <td>Position</td>
+                                    </th>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>Ritu Shukla</td>
+                                        <td>144 pts.</td>
+                                        <td>1st Position</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.</td>
+                                        <td>Nancy Rathee</td>
+                                        <td>143 pts.</td>
+                                        <td>2nd Position</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="achievements" data-aos="fade-up" style="margin-top:20px">
+                                <h4>Distance Results - Men</h4>
+                                <table class="achivements-table" style="width:100%">
+                                    <th>
+                                        <td>Participant Name</td>
+                                        <td>Distance</td>
+                                        <td>Position</td>
+                                    </th>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>Shubham Prakash</td>
+                                        <td>452.9 km</td>
+                                        <td>1st Position</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.</td>
+                                        <td>Sachit Yadav</td>
+                                        <td>357.4 km</td>
+                                        <td>5th Position</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="achievements" data-aos="fade-up" style="margin-top:20px">
+                                <h4>Distance Results - Women</h4>
+                                <table class="achivements-table" style="width:100%">
+                                    <th>
+                                        <td>Participant Name</td>
+                                        <td>Distance</td>
+                                        <td>Position</td>
+                                    </th>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>Ritu Shukla</td>
+                                        <td>230.5 km</td>
+                                        <td>1st Position</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.</td>
+                                        <td>Nancy Rathee</td>
+                                        <td>199.8 km</td>
+                                        <td>4th Position</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        <div class="achievements" data-aos="fade-up" style="margin-top:20px">
+                            <h4>Elevation Gain Results - Men</h4>
+                            <table class="achivements-table" style="width:100%">
+                                <th>
+                                    <td>Participant Name</td>
+                                    <td>Elevation Gain</td>
+                                    <td>Position</td>
+                                </th>
+                                <tr>
+                                    <td>1.</td>
+                                    <td>Shubham Prakash</td>
+                                    <td>22007 m</td>
+                                    <td>1st Position</td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <td>Ashish Soni</td>
+                                    <td>12161 m</td>
+                                    <td>2nd Position</td>
+                                </tr>
+                                <tr>
+                                    <td>3.</td>
+                                    <td>Arnav</td>
+                                    <td>10367 m</td>
+                                    <td>3rd Position</td>
+                                </tr>
+                                <tr>
+                                    <td>4.</td>
+                                    <td>Chirag Badhwar</td>
+                                    <td>5371 m</td>
+                                    <td>4th Position</td>
+                                </tr>
+                                <tr>
+                                    <td>5.</td>
+                                    <td>Sahil Sheoran</td>
+                                    <td>4673 m</td>
+                                    <td>5th Position</td>
+                                </tr>
+                                <tr>
+                                    <td>6.</td>
+                                    <td>Harsh Arya</td>
+                                    <td>4556 m</td>
+                                    <td>6th Position</td>
+                                </tr>
+                                <tr>
+                                    <td>7.</td>
+                                    <td>Rajat Kaushik</td>
+                                    <td>4485 m</td>
+                                    <td>7th Position</td>
+                                </tr>
+                                <tr>
+                                    <td>8.</td>
+                                    <td>Sachit Yadav</td>
+                                    <td>3337 m</td>
+                                    <td>8th Position</td>
+                                </tr>
+                                <tr>
+                                    <td>9.</td>
+                                    <td>Atul Jain</td>
+                                    <td>2351 m</td>
+                                    <td>10th Position</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="achievements" data-aos="fade-up" style="margin-top:20px">
+                            <h4>Elevation Gain Results - Women</h4>
+                            <table class="achivements-table" style="width:100%">
+                                <th>
+                                    <td>Participant Name</td>
+                                    <td>Elevation Gain</td>
+                                    <td>Position</td>
+                                </th>
+                                <tr>
+                                    <td>1.</td>
+                                    <td>Nancy Rathee</td>
+                                    <td>10649 m</td>
+                                    <td>1st Position</td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <td>Ritu Shukla</td>
+                                    <td>2309 m</td>
+                                    <td>2nd Position</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="achievements" data-aos="fade-up" style="margin-top:20px">
+                            <h4>Average Speed Results - Men</h4>
+                            <table class="achivements-table" style="width:100%">
+                                <th>
+                                    <td>Participant Name</td>
+                                    <td>Average Speed</td>
+                                    <td>Position</td>
+                                </th>
+                                <tr>
+                                    <td>1.</td>
+                                    <td>Sachit Yadav</td>
+                                    <td>30.7 km/h</td>
+                                    <td>1st Position</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="achievements" data-aos="fade-up" style="margin-top:20px">
+                            <h4>Average Speed Results - Women</h4>
+                            <table class="achivements-table" style="width:100%">
+                                <th>
+                                    <td>Participant Name</td>
+                                    <td>Average Speed</td>
+                                    <td>Position</td>
+                                </th>
+                                <tr>
+                                    <td>1.</td>
+                                    <td>Nancy Rathee</td>
+                                    <td>16.9 km/h</td>
+                                    <td>2nd Position</td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <td>Ritu Shukla</td>
+                                    <td>16.2 km/h</td>
+                                    <td>3rd Position</td>
+                                </tr>
+                            </table>
+                        </div>
+                            
+                            <!-- <br><center><a href="about.html" class="button1" data-aos="fade-up">Read more..</a></center> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- end of container -->
+            <!-- end of col -->
+            </div>
+            <!-- end of row -->
+        <!-- end of container --> 
+        </div>
+        
         <!-- end of tabs -->
         <div id="details">
             <div id="details" class="basic-2">
-                <h2 align="center">PAST RIDES</h2>
+                <h2 align="center" data-aos="fade-up">PAST RIDES</h2>
                 <br> <br> <br>            
                 <div id="ridecont" class="container">
-                    <div class="row ridebox-2">
-                        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                    <div class="row ridebox-2"  data-aos="fade-up">
+                        <!-- <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button> -->
                         <div class="col-lg-5">
                             <div class="ridebox">
                                 <img class="img-fluid" src="images/trails/bajaura.jpg" style="border-radius:10px;"><br>
@@ -197,8 +601,8 @@
                         </div>
                     </div>
                     <!-- end of row -->
-                    <div class="row reversecol ridebox-2">
-                        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                    <div class="row reversecol ridebox-2"  data-aos="fade-up">
+                        <!-- <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button> -->
                         <div class="col-lg-5" style="text-align: justify;">
                             <p style="color:white;">
                             <h3>Miyoli Village</h3>
@@ -228,7 +632,7 @@
                 </div>
                 <!--<center><a class="btn-solid-reg"  href="pastrides.html">VIEW ALL</a></center>-->
                 <!-- end of row -->
-                <br><br><center><a href="pastrides.html" class="button1">View All</a><center>
+                <br><br><center><a href="pastrides.html" class="button1" data-aos="fade-up">View All</a><center>
             </div>
             <!-- end of container -->
             
@@ -240,7 +644,7 @@
 
         <div id="about" class="tabs">
             <div class="container">
-                <h2 style="text-align: center !important;">CLUB FACILITIES<br><br></h2>
+                <h2 style="text-align: center !important;" data-aos="fade-up">CLUB FACILITIES<br><br></h2>
                 <div class="row justify-content-centre">
                     <div class="container">
                         <div class="row justify-content-centre" style="text-align: justify;">
@@ -249,20 +653,23 @@
                                     <div class="container">
                                         <div class="facilities" style="text-align: justify;">
                                             <div class="row ">
-                                                <div class="showmore">
-                                                    <h3>Inventory</h3>
-                                                  The club currently has a variety of basic tools and equipment to assist members in servicing and maintaining their bikes in the event of a breakdown. 
-                                                  <br><br>Some of these tools are :
-                                                  <ul>
-                                                      <li> Bike repair station
-                                                      <li> Set of hex keys and a spanner
-                                                      <li> Pump with two nozzles
-                                                      <li> Truing stand for wheels
-                                                      <li> Wrench with spokes
-                                                  </ul>
-                                                  And various emergency tools required during the ride.
+                                                <div class="showmore" >
+                                                    <div data-aos="fade-up">
+
+                                                        <h3>Inventory</h3>
+                                                        The club currently has a variety of basic tools and equipment to assist members in servicing and maintaining their bikes in the event of a breakdown. 
+                                                        <br><br>Some of these tools are :
+                                                        <ul>
+                                                            <li> Bike repair station
+                                                                <li> Set of hex keys and a spanner
+                                                                    <li> Pump with two nozzles
+                                                                        <li> Truing stand for wheels
+                                                                            <li> Wrench with spokes
+                                                                            </ul>
+                                                                            And various emergency tools required during the ride.
+                                                                        </div>
                                                   <br><br>
-                                                    <div >
+                                                    <div data-aos="fade-up">
                                                         <h3>Garage Facility</h3>
                                                         We have a dedicated garage and storage room situated at the far end of North Campus below OAK Mess. This garage repair facility will be open to all on dedicated days and times in the presence of a club member. Institute residents can avail themselves of the help provided by the members to carry out adjustments and repairs.
                                                         <br><br>
@@ -290,7 +697,7 @@
                 <!-- end of col -->
                 </div>
                 <!-- end of row -->
-                <br><br><center><a href="facilities.html" class="button1">View All</a><center></center>
+                <br><br><center><a data-aos="fade-up" href="facilities.html" class="button1">View All</a><center></center>
                 <!-- end of row --> 
             </div>
             <!-- end of container --> 
@@ -318,8 +725,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2>CONTACT</h2>
-                        <ul class="list-unstyled li-space-lg">
+                        <h2 data-aos="zoom-in">CONTACT</h2>
+                        <ul class="list-unstyled li-space-lg" data-aos="zoom-in">
                             <li class="address">You may contact us for further queries on</li>
                             <li>
                                 <span class="fa-stack">
@@ -367,7 +774,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <p class="p-small"> © 2021 MtB IIT Mandi</p>
+                        <p class="p-small"> © 2022 MtB IIT Mandi</p>
                     </div>
                     <!-- end of col -->
                 </div>
@@ -406,10 +813,16 @@
         <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
         <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
         <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS for animation on scroll -->
         <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
         <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
         <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
         <script src="js/scripts.js"></script> <!-- Custom scripts -->
         <script src="js/bgswitch.js"></script> 
+
+        <script>
+            AOS.init()
+        </script>
     </body>
 </html>
